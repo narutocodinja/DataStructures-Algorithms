@@ -10,7 +10,6 @@ void printSsq(int ind, vector<int> &ds, int arr[],int n){
 		cout << endl;
 		return;
 	}
-
 	ds.push_back(arr[ind]);
 	printSsq(ind + 1, ds, arr, n);
 	ds.pop_back();
