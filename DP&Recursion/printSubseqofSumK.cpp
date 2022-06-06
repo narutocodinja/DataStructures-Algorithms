@@ -14,6 +14,7 @@ void printSsqK(int ind, vector<int> &ds, int arr[], int n,int sum){
 	sum += arr[ind];
 	ds.push_back(arr[ind]);
 	printSsqK(ind + 1,ds,arr,n,sum);
+	
 	sum -= arr[ind];
 	ds.pop_back();
 	printSsqK(ind + 1,ds,arr,n,sum);
