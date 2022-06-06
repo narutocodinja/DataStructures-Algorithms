@@ -12,6 +12,7 @@ bool printSsqK(int ind, vector<int> &ds, int arr[], int n,int sum){
 		}
 		return false;
 	}
+	
 	sum += arr[ind];
 	ds.push_back(arr[ind]);
 	if(printSsqK(ind + 1,ds,arr,n,sum) == true) return true;
