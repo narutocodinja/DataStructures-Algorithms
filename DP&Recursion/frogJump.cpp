@@ -29,7 +29,7 @@ int frogjump(int n, vector<int> &heights){ // tabulation
 	return dp[n-1];	
 }
 
-int frogjump2(int n, vector<int> &heights){
+int frogjump2(int n, vector<int> &heights){ //space optimized
 	int prev2 = 0, prev = 0;
 
 	for(int i = 1; i < n; i++){
